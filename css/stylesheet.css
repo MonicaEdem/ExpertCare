@@ -1,0 +1,71 @@
+/* body styling */
+body{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* logo styling */
+.logo{
+    width: 200px;
+    height: 60px;
+    margin-left: 5rem;
+} 
+
+/* nav bar styling */
+#nav-links{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgba(59, 63, 74, 0.146); */
+}
+   
+/* listed items as a whole styling */
+#ul-list{
+    display: flex;
+    list-style: none;
+    gap: 30pt;
+    margin-right: 5rem;
+    gap: 3rem;
+}
+
+/* individual listed items styling */
+.nav-item{
+    text-decoration: none;
+    color: #3C6888;
+    font-weight: 200;
+    font-size: 13pt;
+}
+
+#ul-list a:hover{
+    background-color: #ABA944;
+}
+
+#loginIcon{
+    margin-right: 2pt;
+}
+
+/* header img styling */
+.header-bg{
+    background-image: url("../img/doctor-6029164_1920.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%; 
+
+}
+
+
+
+
+/* .img{
+    background-position: center;
+    background-position:fixed;
+    
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;   
+} */
+
+
+
