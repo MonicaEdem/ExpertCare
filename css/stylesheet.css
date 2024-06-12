@@ -161,7 +161,7 @@ grid-row-gap: 0px;
     border-radius: 1rem;
     padding: 18pt;
     padding-right: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 /* styling section 1 div texts */
@@ -199,17 +199,20 @@ grid-row-gap: 0px;
 }
 
 .section2 a:hover{
-    background-color: #ABA944;
+    color: #ABA944;
 }
 
   
 /* section2 grid */
 .section2-grid{
+
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 40px;
-    grid-row-gap: 0px;      
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-left: 15rem;
+        
 }
 
 
@@ -238,7 +241,7 @@ grid-row-gap: 0px;
     font-weight: 100;
     font-size: 15pt;
     color:#918f3b;
-    padding-bottom: 6rem;
+    padding-bottom: -3rem;
 }
 
 /* section2 imgs */
@@ -257,12 +260,121 @@ grid-row-gap: 0px;
     color: #78773b;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14pt;
-    font-stretch: extra-expanded;
+    width: 17rem;
+    font-stretch: ultra-expanded;
+    /* font-stretch: extra-expanded; */
    
 }
 
+/* footer logos styling */
+.appleStore{
+    width: 150px;
+    height: 50px;
+    margin-left: 15rem; 
+}
+
+.playStore{
+    width: 150px;
+    height: 50px;
+    
+    margin-left: 2rem;
+}
+
+/* styling the footer */
 
 
+/* footer first p styling */
+
+.footer-p1{
+    font-family: cursive;
+    font-size: 12pt;
+    color: #918f3b;
+    margin-left: 2rem;
+    margin-top: -0.5rem;
+    /* font-stretch: ultra-expanded; */
+} 
+
+/* Footer flex */
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 4rem;
+    padding-right:8rem ;
+
+}
+
+/* styling footer grid */
+
+.footergrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    padding-left: 8rem;
+    padding-right: 4rem;
+}
+
+/* footer texts styling */
+.footergrid h1{
+    text-decoration: underline;
+    color: #0d3558;
+    text-decoration-color: #0d3558;
+    font-family: cursive;
+    font-size: 15pt;  
+
+}
+
+.footergrid a{
+    text-decoration: none;
+    color: #78773b;
+    font-family: cursive;
+
+}
+
+.footergrid a:hover{
+    color: #103b6099;
+}
+
+.social i{
+        background-color: #26355D;
+        padding: 20px;
+        color: white;
+        border-radius: 10px;
+        margin-top: 1rem;
+        margin-left: 4rem;
+}
+
+/* contact us styling */
+.lastFlex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lastFlex a{
+    text-decoration: underline;
+    color: #0d3558;
+    text-decoration-color: #0d3558;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    gap: 4rem;
+}
+
+.lastFlex a:hover{
+    color:#78773b;
+}
+
+.lastFlex h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #0d3558;
+
+}
+.lastFlex h3{
+    margin-left: 10rem;
+}
+
+.lastFlex i{
+    margin-right: 1rem ;
+}
 
 
   
