@@ -9,16 +9,16 @@
     <script src="./js/script.js" defer></script>
 </head>
 <body>
-        <header class="header-bg">
+        <header class="header-bg" id="find">
             <nav id="nav-links">
-                <div><a href=""><img src="./img/logo.png" alt="logo" class="logo"></a></div>
+                <div><a href=""><img src="./img/logo.png" alt="logo" class="logo" ></a></div>
                 <div>
                     <ul id="ul-list">
                         <li><a href="" class="nav-item">About us</a></li>
-                        <li><a href="" class="nav-item">Find Doctor</a></li>
+                        <li><a href="#specialities" class="nav-item">Most Searched Specialties</a></li>
                         <li><a href="" class="nav-item">Health Packages</a></li>
-                        <li><a href="" class="nav-item">Book Appointment</a></li>
-                        <li><a href="" class="nav-item"><span id="loginIcon"><i class="fa-solid fa-user"></i></span>Login<br> Signup</a></li>
+                        <li><a href="" class="nav-item" id="appointment">Book Appointment</a></li>
+                        <li><a href="" class="nav-item" id="login"><span id="loginIcon"><i class="fa-solid fa-user"></i></span>Login<br> Signup</a></li>
                     </ul>
                 </div>
             </nav>
@@ -32,68 +32,93 @@
                 <h2>effortlessly.Whether in-person or online, expert care is just a click away.    
                 </h2>
                 <h2 id="header-h22">
-                        Your health journey starts here.
+                        Your health journey starts here!
                  </h2>
             </div>
 
             <div class="input-div">
-                <input type="text" placeholder="Find Doctor..."><a href=""><i class="fa-solid fa-magnifying-glass icon"></i></a>
+                <input type="text" placeholder="Find Doctor..."><a href=""><i class="fa-solid fa-magnifying-glass icon1"></i></a>
                 </div>
         </header>
 
         <section class="Section1">
 
-            <h1> Specialities</h1>
+            <h1 id="specialities"> Most Searched Specialities</h1>
             <div class="Section1-grid">
               <div class="Section1-divbg">
                 <div>
                     <i class="fa-solid fa-venus icon"></i>
                 </div>
-                <div class="firstSectionText">OB-GYN</div>
+                <div class="firstSectionText gyn">OB-GYN</div>
               </div>
 
               <div class="Section1-divbg">
                 <div>
                     <i class="fa-solid fa-tooth icon"></i>
                 </div>
-                <div class="firstSectionText">Dentist</div>
+                <div class="firstSectionText dentist">Dentist</div>
               </div>
 
               <div class="Section1-divbg">
                 <div>
                     <i class="fa-solid fa-eye icon"></i>
                 </div>
-                <div class="firstSectionText">Eye Doctor</div>
+                <div class="firstSectionText eye">Optometrist</div>
               </div>
 
               <div class="Section1-divbg">
                 <div>
                     <i class="fa-solid fa-heart-pulse icon"></i>
                 </div>
-                <div class="firstSectionText">Cardiologist</div>
+                <div class="firstSectionText heart">Cardiologist</div>
               </div>
               
               <div class="Section1-divbg">
                 <div>
                     <i class="fa-solid fa-hand-dots icon"></i>
                 </div>
-                <div class="firstSectionText">Dermatologist</div>
+                <div class="firstSectionText derm">Dermatologist</div>
               </div>
-
-              <!-- <div class="Section1-divbg">
-                <div>
-                    <i class="fa-solid fa-brain icon"></i>
-                </div>
-                <div class="firstSectionText">Psychologist</div>
-              </div> -->
-
-
-
-
-
-
-
             </div>
+        </section>
+        
+        <section class="section2">
+          <h1 class="">Book Appointment</h1>
+          <h2>Book an appointment in just <span>4</span> steps!</h2>
+
+          <div class="section2-grid">
+            <div class="section2-divbg">
+              <img src="./img/login.png" alt="" class="section2-img">
+              <h3><a href="#login">Login/Sign up</a></h3>
+              <p>Create an account if you are a new.<br>
+              Enter your email and password to login for existing user.</p>
+             
+            </div>
+
+            <div class="section2-divbg">
+              <img src="./img/doctors.png" alt="" class="section2-img">
+              <h3><a href="#find">Find a Specialist</a></h3>
+              <p>Find a specialist you will like to see</p>
+            </div>
+
+            <div class="section2-divbg">
+              <img src="./img/book.png" alt="" class="section2-img">
+              <h3><a href="#appointment">Book Appointment</a></h3>
+              <p>Check the availability of the specialist
+              and book appointment. Book for either online
+              or inperson appointment; whichever that applies.</p>
+            </div>
+
+            <div class="section2-divbg">
+              <img src="./img/confirm.png" alt="" class="section2-img">
+              <h3><a href="">Confirm</a></h3>
+              <p>Confirm your appointment through a phone call or link sent through any of the platforms you choose during the booking.</p>
+            </div>
+          </div>
+
+          
+
+          
         </section>
     
 </body>
