@@ -16,7 +16,7 @@ body{margin: 0;
 #nav-links{
     display: flex;
     justify-content: space-between;
-    background-color: rgba(59, 63, 74, 0.146);
+    background-color:#0d35581a;
 }
    
 /* listed items as a whole styling */
@@ -31,13 +31,14 @@ body{margin: 0;
 /* individual listed items styling */
 .nav-item{
     text-decoration: none;
-    color: #3C6888;
+    color:#0D3558;
     font-weight: 200;
-    font-size: 13pt;
+    font-size: 14pt;
+    font-weight:500;
 }
 
 #ul-list a:hover{
-    background-color: #ABA944;
+    color: #ABA944;
 }
 
 #loginIcon{
@@ -46,32 +47,39 @@ body{margin: 0;
 
 /* header img styling */
 .header-bg{
-    background-image: url("");
+    /* background-color: #00264ceb; */
     background-position: left;
     background-size:cover;
     height: 100vh;
     width: 100%;
 }
 
+.first-div{
+    width: 60%;
+}
+
+
 /* search bar styling */
 .input-div{
-    margin-left: 18rem; 
+    margin-left: 1rem; 
+    margin-top: 4rem;
 }
 
 .input-div input{
-    width: 25rem;
+    width: 20rem;
     height: 3rem;
-    background-color: #eeeeee6c;
-    border-color: #eeeeee67;
-    color:#5d5c30;
+    /* border-radius: 0.2rem; */
+    background-color:white;
+    color: #0D3558;
     font-size: 20px; 
-    padding-left: 20pt; 
+    padding-left: 20pt;   
+
 
 }
 
 .input-div a{
     text-decoration: none;
-    color: #0d3558;
+    color: white;
     font-size: 14pt;
     font-family: cursive;
 }
@@ -80,39 +88,62 @@ body{margin: 0;
 
 .icon1{
     margin-left: 0.5rem;
-    background-color:#91903b8b;
+    background-color: #1079CA;
     padding: 12pt 20pt;
 }
 
 
 /* header text stylibg */
 .header-text{
-    margin-left: 10rem;
-    margin-top: 10rem;  
+    display: flex;
+    height: 100vh;
+    margin-left: 4rem;
+    margin-top: 4rem; 
+    
+}
+
+
+.header-text img{
+    width: 80%;
+    margin-top: -2rem;
+    /* height: 300pt; */
+}
+
+.second-div{
+    display: flex;
+    flex-direction: column;
 }
 
 /* Styling individual texts */
 .header-text h1{
-    margin-left: 7rem;
-    font-family: cursive;
+    margin-left: -5rem;
+    font-family: Arial, Helvetica, sans-serif;
     color:#918f3b;
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 30pt;
+    /* font-weight: 900; */
 }
 
 .header-text h2{
-    color: #0d3558; 
+    color:#0d3558; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15pt;
+    /* margin-left: -2rem; */
+   
 }
 
 #header-h21{
-    margin-left: 23pt;
+    /* margin-left: 23pt; */
     margin-bottom: -1rem; 
     
 }
 
 #header-h22{
-margin-left: 12rem;
+/* margin-left: 12rem; */
 margin-top: -1rem;
 margin-bottom: 2rem;
-color: #0d3558;
+color:#0d3558;
 }
 
 /* Secion1 grid */
@@ -123,45 +154,52 @@ grid-template-columns: repeat(7, 1fr);
 grid-template-rows: 1fr;
 grid-column-gap: 20px;
 grid-row-gap: 0px;
+margin-left: 5rem;
 }
 
 
 /* Styling icons for section1 grid */
 .icon{
 
-    background-color:#0d3558;
+    background-color:#1079CA;
     padding: 20px;
     color: white;
     border-radius: 10px;
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 4rem;
+    font-weight: 900;
 }
 /* first section styling */
 .Section1{
+    background-color: #eeeeee71;
     padding-left: 2rem ;
     padding-right: 4rem;
     padding-bottom: 5rem;
+    margin: 6rem 4rem;
+    border-radius: 2rem;
    
 }
 /* first section h2 styling */
 .Section1 h1{
-    margin-left: 27rem;
+    margin-left: 23rem;
     color: #0d3558;
     font-weight: 900;
-    font-family: cursive;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 4rem;
     padding-top: 6rem;
     padding-bottom: 3rem;
+    font-size: 20pt;
 }
 
 /* background for the section 1 divs */
 .Section1-divbg{
-    background-color:#91903bb9;
+    background-color:white;
     border-radius: 1rem;
     padding: 18pt;
-    padding-right: 5rem;
+    padding-right: 4.5rem;
     margin-bottom: 2rem;
+    /* margin-left: -1rem; */
 }
 
 /* styling section 1 div texts */
@@ -171,23 +209,39 @@ grid-row-gap: 0px;
     font-weight: 900;
     color: #0d3558;
 }
-/* .eye{
-    margin-left: 30pt;
-}
+
+
+
+ .eye{
+    margin-left: 40pt;
+    font-size: 13pt;
+    /* justify-content: center; */
+} 
 
 .gyn{
   
-    margin-right: 10pt;
-} */
+    margin-left: 2.9rem;
+    font-size: 12pt;
+} 
 
 .dentist{
     margin-left: 50pt;
+    font-size: 13pt;
+
+}
+
+.heart{
+    margin-left: 30pt;
+    font-size: 13pt;
 }
 
 /* section 2 grid */
 .section2{
+    background-color: #e7f4fd88;
     padding-top: 5rem;
     padding-left: 20pt;
+    margin: 4rem 4rem;
+    border-radius: 2rem;
    
 }
 
@@ -218,11 +272,12 @@ grid-row-gap: 0px;
 
 /* section 2 h1 styling */
 .section2 h1{
-    margin-left: 30rem;
+    margin-left: 26rem;
     color:#0d3558;
     font-weight: 900;
-    font-family: cursive;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-bottom: 4rem;
+    font-size: 20pt;
 }
 
 /* styling section 2 span */
@@ -230,15 +285,15 @@ grid-row-gap: 0px;
 .section2 span{
     font-weight: 900;
     font-size: 30pt;
-    color:#103556;
+    color:#0d3558;
     
 }
 
 /* styling section2 h2 */
 .section2 h2{
-    margin-left: 26rem;
+    margin-left: 23rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 100;
+    font-weight: 700;
     font-size: 15pt;
     color:#918f3b;
     padding-bottom: -3rem;
@@ -257,11 +312,12 @@ grid-row-gap: 0px;
 /* styling section paragraph */
 
 .section2 p{
-    color: #78773b;
+    color:  #3f3f1e;;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14pt;
+    font-weight: 500;
     width: 17rem;
-    font-stretch: ultra-expanded;
+    font-stretch: wider;
     /* font-stretch: extra-expanded; */
    
 }
@@ -280,15 +336,27 @@ grid-row-gap: 0px;
     margin-left: 2rem;
 }
 
+
+#color{
+    height: 1pt;
+    background-color: rgba(128, 128, 128, 0.16);
+    margin: 2rem 2rem;
+    border-radius: 1rem;
+}
+
 /* styling the footer */
+.footer{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
 
 
 /* footer first p styling */
 
 .footer-p1{
-    font-family: cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12pt;
-    color: #918f3b;
+    color: #3f3f1e;
     margin-left: 2rem;
     margin-top: -0.5rem;
     /* font-stretch: ultra-expanded; */
@@ -298,8 +366,9 @@ grid-row-gap: 0px;
 .footer-flex{
     display: flex;
     justify-content: space-between;
-    padding: 4rem 4rem;
-    padding-right:8rem ;
+    margin-left: -2rem;
+    margin-right: 4rem;
+    
 
 }
 
@@ -307,12 +376,16 @@ grid-row-gap: 0px;
 
 .footergrid{
     display: grid;
+    justify-content: space-evenly;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 40px;
     grid-row-gap: 0px;
-    padding-left: 8rem;
-    padding-right: 4rem;
+    margin-top: 1rem;
+    /* padding-left: 8rem;
+    padding-right: 8rem; */
+    margin-left: 10rem;
+   
 }
 
 /* footer texts styling */
@@ -320,20 +393,20 @@ grid-row-gap: 0px;
     text-decoration: underline;
     color: #0d3558;
     text-decoration-color: #0d3558;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;  
 
 }
 
 .footergrid a{
     text-decoration: none;
-    color: #78773b;
-    font-family: cursive;
+    color: #3f3f1e;
+    font-family: ;
 
 }
 
 .footergrid a:hover{
-    color: #103b6099;
+    color: #1079CA;
 }
 
 .social i{
@@ -342,7 +415,12 @@ grid-row-gap: 0px;
         color: white;
         border-radius: 10px;
         margin-top: 1rem;
-        margin-left: 4rem;
+        /* margin-left: rem; */
+}
+
+/* styling pricing div */
+.pricing-div{
+    margin-left: 3.5rem;
 }
 
 /* contact us styling */
@@ -370,6 +448,7 @@ grid-row-gap: 0px;
 }
 .lastFlex h3{
     margin-left: 10rem;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .lastFlex i{
