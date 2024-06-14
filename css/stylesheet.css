@@ -39,6 +39,7 @@ body{margin: 0;
 
 #ul-list a:hover{
     color: #ABA944;
+    text
 }
 
 #loginIcon{
@@ -93,7 +94,7 @@ body{margin: 0;
 }
 
 
-/* header text stylibg */
+/* header text styling */
 .header-text{
     display: flex;
     height: 100vh;
@@ -105,7 +106,7 @@ body{margin: 0;
 
 .header-text img{
     width: 80%;
-    margin-top: -2rem;
+    margin-top: -3rem;
     /* height: 300pt; */
 }
 
@@ -117,7 +118,7 @@ body{margin: 0;
 /* Styling individual texts */
 .header-text h1{
     margin-left: -5rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:#918f3b;
     margin-top: 4rem;
     text-align: center;
@@ -129,6 +130,7 @@ body{margin: 0;
     color:#0d3558; 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15pt;
+    font-stretch: ultra-expanded;
     /* margin-left: -2rem; */
    
 }
@@ -136,25 +138,25 @@ body{margin: 0;
 #header-h21{
     /* margin-left: 23pt; */
     margin-bottom: -1rem; 
-    
 }
+    
 
-#header-h22{
+/* #header-h22{
 /* margin-left: 12rem; */
-margin-top: -1rem;
+/* margin-top: -1rem;
 margin-bottom: 2rem;
 color:#0d3558;
-}
+} */ 
 
 /* Secion1 grid */
 
 .Section1-grid{
 display: grid;
-grid-template-columns: repeat(7, 1fr);
-grid-template-rows: 1fr;
+grid-template-columns: repeat(4, 1fr);
 grid-column-gap: 20px;
-grid-row-gap: 0px;
-margin-left: 5rem;
+margin-left: auto;
+margin-right: auto;
+
 }
 
 
@@ -167,15 +169,13 @@ margin-left: 5rem;
     border-radius: 10px;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
     font-weight: 900;
 }
 /* first section styling */
 .Section1{
     background-color: #eeeeee71;
-    padding-left: 2rem ;
-    padding-right: 4rem;
-    padding-bottom: 5rem;
+    padding: 0rem 4rem 5rem 4rem;
     margin: 6rem 4rem;
     border-radius: 2rem;
    
@@ -197,25 +197,85 @@ margin-left: 5rem;
     background-color:white;
     border-radius: 1rem;
     padding: 18pt;
-    padding-right: 4.5rem;
+    /* padding-right: 4.5rem; */
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     /* margin-left: -1rem; */
+}
+
+
+/* section 1 bg hover */
+.Section1 a{
+    text-decoration: none;
+}
+
+.Section1 a:hover{
+
 }
 
 /* styling section 1 div texts */
 .firstSectionText{
-    margin-left: 27pt;
+
     font-size: 11pt;
     font-weight: 900;
     color: #0d3558;
+    text-align: center;
 }
 
 
 
- .eye{
+/* insurance section styling */
+.insurance{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* width: 100%; */
+    background-color:#0d3558;
+    padding-bottom: 2rem;
+    /* border-radius: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem; */
+
+}
+
+.insurance h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#d8dde1;
+    margin-bottom: 3rem;
+    font-size: 20pt;
+    font-weight: 400;
+}
+
+.insurance img{
+    height: 40pt;
+    
+    /* width: fit-content; */
+}
+
+#premier{
+    width: 18%;
+
+} 
+
+#apex{
+    width: 10%;
+}
+
+
+
+/* trial */
+.Section1-grid:hover{
+    transform: scale(1.1);
+    transition: transform 0.6s;
+    background-color: rgba(245, 245, 220, 0.418);
+}
+ /* .eye{
     margin-left: 40pt;
     font-size: 13pt;
-    /* justify-content: center; */
+  
 } 
 
 .gyn{
@@ -233,15 +293,21 @@ margin-left: 5rem;
 .heart{
     margin-left: 30pt;
     font-size: 13pt;
-}
+} */
 
 /* section 2 grid */
 .section2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    width: auto;
     background-color: #e7f4fd88;
-    padding-top: 5rem;
-    padding-left: 20pt;
+    padding-top: 3rem;
+    /* padding-left: 20pt; */
     margin: 4rem 4rem;
     border-radius: 2rem;
+    width: auto;
    
 }
 
@@ -260,19 +326,35 @@ margin-left: 5rem;
 /* section2 grid */
 .section2-grid{
 
-    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+
+
+
+
+    /* margin-left: auto;
+    margin-right: auto; */
+   
+    /* display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-column-gap: 20px;
+margin-left: auto;
+margin-right: auto; */
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    /* grid-column-gap: 10px; */
+    /* grid-row-gap: 10px;
     margin-left: 15rem;
+    justify-content: space-between; */ 
         
 }
 
 
 /* section 2 h1 styling */
 .section2 h1{
-    margin-left: 26rem;
+    /* margin-left: 26rem; */
     color:#0d3558;
     font-weight: 900;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -291,20 +373,23 @@ margin-left: 5rem;
 
 /* styling section2 h2 */
 .section2 h2{
-    margin-left: 23rem;
+    /* margin-left: 23rem; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
     font-size: 15pt;
     color:#918f3b;
-    padding-bottom: -3rem;
+    margin-top: -3rem;
+    /* padding-top: -10rem; */
+    /* padding-bottom: -3rem; */
+    
 }
 
 /* section2 imgs */
 .section2 img{
     height: 150pt;
-    margin-left: -2rem;
+    /* margin-left: -2rem; */
     
-    margin-top: 4rem;  
+    /* margin-top: 4rem;   */
 }
 
     
@@ -337,17 +422,19 @@ margin-left: 5rem;
 }
 
 
-#color{
+.color{
     height: 1pt;
     background-color: rgba(128, 128, 128, 0.16);
     margin: 2rem 2rem;
     border-radius: 1rem;
+   
 }
 
 /* styling the footer */
 .footer{
     padding-left: 4rem;
     padding-right: 4rem;
+    width: 90%;
 }
 
 
@@ -356,9 +443,9 @@ margin-left: 5rem;
 .footer-p1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12pt;
-    color: #3f3f1e;
-    margin-left: 2rem;
-    margin-top: -0.5rem;
+    color:#918f3b;
+    margin-left: 7rem;
+    margin-top: 4rem;
     /* font-stretch: ultra-expanded; */
 } 
 
@@ -366,8 +453,8 @@ margin-left: 5rem;
 .footer-flex{
     display: flex;
     justify-content: space-between;
-    margin-left: -2rem;
-    margin-right: 4rem;
+    /* margin-left: -2rem;
+    margin-right: 4rem; */
     
 
 }
@@ -376,9 +463,10 @@ margin-left: 5rem;
 
 .footergrid{
     display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+    /* justify-content: center; */
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+
     grid-column-gap: 40px;
     grid-row-gap: 0px;
     margin-top: 1rem;
@@ -386,6 +474,11 @@ margin-left: 5rem;
     padding-right: 8rem; */
     margin-left: 10rem;
    
+}
+
+/* footer icon div */
+.footer-i{
+    margin-right: 5rem;
 }
 
 /* footer texts styling */
@@ -398,10 +491,14 @@ margin-left: 5rem;
 
 }
 
+
+
 .footergrid a{
     text-decoration: none;
+    font-size: 10pt;
     color: #3f3f1e;
-    font-family: ;
+    font-family: Arial, Helvetica, sans-serif;
+ 
 
 }
 
@@ -409,12 +506,13 @@ margin-left: 5rem;
     color: #1079CA;
 }
 
-.social i{
+ .icon2{
         background-color: #26355D;
         padding: 20px;
         color: white;
         border-radius: 10px;
         margin-top: 1rem;
+       
         /* margin-left: rem; */
 }
 
@@ -426,7 +524,8 @@ margin-left: 5rem;
 /* contact us styling */
 .lastFlex{
     display: flex;
-    justify-content: space-evenly;
+    
+    
 }
 
 .lastFlex a{
